@@ -1,205 +1,205 @@
 <div class="container">
-    <!-- Hidden Attributes -->
-    <input name="attr_body_die" hidden="true" />
-    <input name="attr_chance_die" hidden="true" />
-    <input name="attr_spirit_die" hidden="true" />
-    <!-- Hidden Attributes End -->
+   <!-- Hidden Attributes -->
+   <input name="attr_body_die" hidden="true" />
+   <input name="attr_chance_die" hidden="true" />
+   <input name="attr_spirit_die" hidden="true" />
+   <!-- Hidden Attributes End -->
 
-    <!-- Roll Button -->
-    <button class = "threedice" name="roll_threedice" type="roll" value="&{template:threedice} {{character=@{character_name}}} {{body=@{body_die}}} {{body_roll=[[1d10!]]}} {{chance=@{chance_die}}} {{chance_roll=[[1d10!]]}} {{spirit=@{spirit_die}}} {{spirit_roll=[[1d10!]]}}"></button>
-    <!-- Roll Button End -->
+   <!-- Roll Button -->
+   <button class = "threedice" name="roll_threedice" type="roll" value="&{template:threedice} {{character=@{character_name}}} {{body=@{body_die}}} {{body_roll=[[1d10!]]}} {{chance=@{chance_die}}} {{chance_roll=[[1d10!]]}} {{spirit=@{spirit_die}}} {{spirit_roll=[[1d10!]]}}"></button>
+   <!-- Roll Button End -->
 
-    <!-- Header -->
-    <div class="char-name label">
-        <div class="small-label">Personnage</div>
-        <input type="text" name="attr_character_name" disabled="true" />
-    </div>
-    <div class="char-level label">
-        <div class="small-label">Niveau</div>
-        <input type="number" name="attr_character_level" value="1" />
-    </div>
-    <!-- Header End -->
+   <!-- Header -->
+   <div class="char-name label">
+      <div class="small-label">Personnage</div>
+      <input type="text" name="attr_character_name" disabled="true" />
+   </div>
+   <div class="char-level label">
+      <div class="small-label">Niveau</div>
+      <input type="number" name="attr_character_level" value="1" />
+   </div>
+   <!-- Header End -->
 
-    <!-- Main Statistics -->
-    <div class="main-stats">
-        <div class="stat label">
-            <div class="large-label">Force</div>
-            <input type="number" name="attr_force" />
-        </div>
-        <div class="temp-stat label">
-            <div class="small-label">Temporaire</div>
-            <input type="number" name="attr_temp_force" />
-        </div>
-        <div class="stat label">
-            <div class="large-label">Mental</div>
-            <input type="number" name="attr_mental" />
-        </div>
-        <div class="temp-stat label">
-            <div class="small-label">Temporaire</div>
-            <input type="number" name="attr_temp_mental" />
-        </div>
-        <div class="stat label">
-            <div class="large-label">Volonté</div>
-            <input type="number" name="attr_will" />
-        </div>
-        <div class="stat label">
-            <div class="large-label">Rapidité</div>
-            <input type="number" name="attr_swiftness" />
-        </div>
-        <div class="temp-stat label">
-            <div class="small-label">Matos</div>
-            <input type="number" name="attr_item_swiftness" />
-        </div>
-        <div class="temp-stat label">
-            <div class="small-label">Temporaire</div>
-            <input type="number" name="attr_temp_swiftness" />
-        </div>
-        <div class="stat label">
-            <div class="large-label">Chance</div>
-            <input type="number" name="attr_luck" />
-        </div>
-    </div>
-    <!-- Main Statistics End -->
+   <!-- Main Statistics -->
+   <div class="main-stats">
+      <div class="stat label">
+         <div class="large-label">Force</div>
+         <input type="number" name="attr_force" />
+      </div>
+      <div class="temp-stat label">
+         <div class="small-label">Temporaire</div>
+         <input type="number" name="attr_temp_force" />
+      </div>
+      <div class="stat label">
+         <div class="large-label">Mental</div>
+         <input type="number" name="attr_mental" />
+      </div>
+      <div class="temp-stat label">
+         <div class="small-label">Temporaire</div>
+         <input type="number" name="attr_temp_mental" />
+      </div>
+      <div class="stat label">
+         <div class="large-label">Volonté</div>
+         <input type="number" name="attr_will" />
+      </div>
+      <div class="stat label">
+         <div class="large-label">Rapidité</div>
+         <input type="number" name="attr_swiftness" />
+      </div>
+      <div class="temp-stat label">
+         <div class="small-label">Matos</div>
+         <input type="number" name="attr_item_swiftness" />
+      </div>
+      <div class="temp-stat label">
+         <div class="small-label">Temporaire</div>
+         <input type="number" name="attr_temp_swiftness" />
+      </div>
+      <div class="stat label">
+         <div class="large-label">Chance</div>
+         <input type="number" name="attr_luck" />
+      </div>
+   </div>
+   <!-- Main Statistics End -->
 
-    <!-- Hit Points -->
-    <div class="body-points">
-        <div class="small-category">Points de corps</div>
-        <div class="max-points">
-            <input name="attr_max_body" readonly />
-        </div>
-        <input class="points-input" type="number" name="attr_current_body" />
-    </div>
-    <div class="luck-points">
-        <div class="small-category">Points de chance</div>
-        <div class="max-points">
-            <input name="attr_max_chance" readonly />
-        </div>
-        <input class="points-input" type="number" name="attr_current_chance" />
-    </div>
-    <div class="spirit-points">
-        <div class="small-category">Points d'esprit</div>
-        <div class="max-points">
-            <input name="attr_max_spirit" readonly />
-        </div>
-        <input class="points-input" type="number" name="attr_current_spirit" />
-    </div>
-    <!-- Hit Points End -->
+   <!-- Hit Points -->
+   <div class="body-points">
+      <div class="small-category">Points de corps</div>
+      <div class="max-points">
+         <input name="attr_max_body" readonly />
+      </div>
+      <input class="points-input" type="number" name="attr_current_body" />
+   </div>
+   <div class="luck-points">
+      <div class="small-category">Points de chance</div>
+      <div class="max-points">
+         <input name="attr_max_chance" readonly />
+      </div>
+      <input class="points-input" type="number" name="attr_current_chance" />
+   </div>
+   <div class="spirit-points">
+      <div class="small-category">Points d'esprit</div>
+      <div class="max-points">
+         <input name="attr_max_spirit" readonly />
+      </div>
+      <input class="points-input" type="number" name="attr_current_spirit" />
+   </div>
+   <!-- Hit Points End -->
 
-    <!-- Recovery -->
-    <div class="body-recovery">
-        <div class="stat label">
-            <div class="small-label">Guérison</div>
-            <input type="number" name="attr_body_recovery" />
-        </div>
-    </div>
-    <div class="spirit-recovery">
-        <div class="stat label">
-            <div class="small-label">Volonté</div>
-            <input type="number" name="attr_spirit_recovery" readonly />
-        </div>
-    </div>
-    <!-- Recovery End -->
+   <!-- Recovery -->
+   <div class="body-recovery">
+      <div class="stat label">
+         <div class="small-label">Guérison</div>
+         <input type="number" name="attr_body_recovery" />
+      </div>
+   </div>
+   <div class="spirit-recovery">
+      <div class="stat label">
+         <div class="small-label">Volonté</div>
+         <input type="number" name="attr_spirit_recovery" readonly />
+      </div>
+   </div>
+   <!-- Recovery End -->
 
-    <!-- Skills -->
-    <div class="skills">
-        <div class="stat label">
-                <div class="small-label">Athlétisme</div>
-                <input type="number" name="attr_athletics" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Baratin</div>
-                <input type="number" name="attr_chitchat" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Charisme</div>
-                <input type="number" name="attr_charisma" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Combat</div>
-                <input type="number" name="attr_brawl" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Conduite</div>
-                <input type="number" name="attr_riding" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Défense</div>
-                <input type="number" name="attr_defense" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Furtivité</div>
-                <input type="number" name="attr_stealth" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Investigation</div>
-                <input type="number" name="attr_investigation" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Larcin</div>
-                <input type="number" name="attr_theft" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Magie</div>
-                <input type="number" name="attr_magic" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Occultisme</div>
-                <input type="number" name="attr_occultism" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Perception</div>
-                <input type="number" name="attr_perception" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Sang-froid</div>
-                <input type="number" name="attr_cool" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Savoir</div>
-                <input type="number" name="attr_knowledge" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Soin</div>
-                <input type="number" name="attr_medic" />
-        </div>
-        <div class="stat label">
-                <div class="small-label">Technologie</div>
-                <input type="number" name="attr_technology" />
-        </div>
-    </div>
-    <!-- Skills End -->
+   <!-- Skills -->
+   <div class="skills">
+      <div class="stat label">
+         <div class="small-label">Athlétisme</div>
+         <input type="number" name="attr_athletics" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Baratin</div>
+         <input type="number" name="attr_chitchat" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Charisme</div>
+         <input type="number" name="attr_charisma" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Combat</div>
+         <input type="number" name="attr_brawl" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Conduite</div>
+         <input type="number" name="attr_riding" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Défense</div>
+         <input type="number" name="attr_defense" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Furtivité</div>
+         <input type="number" name="attr_stealth" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Investigation</div>
+         <input type="number" name="attr_investigation" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Larcin</div>
+         <input type="number" name="attr_theft" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Magie</div>
+         <input type="number" name="attr_magic" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Occultisme</div>
+         <input type="number" name="attr_occultism" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Perception</div>
+         <input type="number" name="attr_perception" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Sang-froid</div>
+         <input type="number" name="attr_cool" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Savoir</div>
+         <input type="number" name="attr_knowledge" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Soin</div>
+         <input type="number" name="attr_medic" />
+      </div>
+      <div class="stat label">
+         <div class="small-label">Technologie</div>
+         <input type="number" name="attr_technology" />
+      </div>
+   </div>
+   <!-- Skills End -->
 
-    <!-- Roll Template -->
-    <rolltemplate class="sheet-rolltemplate-threedice">
-        <div class="sheet-template-container">
-    	    <div class="sheet-template-header">{{character}}</div>
-            {{#body}}
-                <div class="sheet-template-rolls">
-                    <div>Dé de corps</div>
-        	        {{body_roll}}
-                </div>
-        	{{/body}}
+   <!-- Roll Template -->
+   <rolltemplate class="sheet-rolltemplate-threedice">
+   <div class="sheet-template-container">
+      <div class="sheet-template-header">{{character}}</div>
+      {{#body}}
+      <div class="sheet-template-rolls">
+         <div>Dé de corps</div>
+         {{body_roll}}
+      </div>
+      {{/body}}
 
-        	{{#chance}}
-        	    <div class="sheet-template-rolls">
-                    <div>Dé de chance</div>
-        	        {{chance_roll}}
-                </div>
-        	{{/chance}}
+      {{#chance}}
+      <div class="sheet-template-rolls">
+         <div>Dé de chance</div>
+         {{chance_roll}}
+      </div>
+      {{/chance}}
 
-        	{{#spirit}}
-        	    <div class="sheet-template-rolls">
-                    <div>Dé d'esprit</div>
-        	        {{spirit_roll}}
-                </div>
-        	{{/spirit}}
-        	</div>
-    </rolltemplate>
-    <!-- Roll Template End -->
+      {{#spirit}}
+      <div class="sheet-template-rolls">
+         <div>Dé d'esprit</div>
+         {{spirit_roll}}
+      </div>
+      {{/spirit}}
+   </div>
+   </rolltemplate>
+   <!-- Roll Template End -->
 
-    <script type="text/worker">
+   <script type="text/worker">
 
-on("change:force change:temp_force sheet:opened", () => {
+      on("change:force change:temp_force sheet:opened", () => {
    getAttrs(["force", "temp_force"], (values) => {
       if (parseInt(values.temp_force) >= 0) {
           return setAttrs({ "max_body": values.temp_force });
@@ -268,5 +268,5 @@ on("change:current_spirit sheet:opened", () => {
    });
 });
 
-    </script>
+   </script>
 </div>

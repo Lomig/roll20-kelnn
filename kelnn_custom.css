@@ -1,231 +1,231 @@
 .sheet-container {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 1fr 2fr;
-    grid-template-rows: 32px 32px 184px 24px 32px auto 24px auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr 2fr;
+  grid-template-rows: 32px 32px 184px 24px 32px auto 24px auto;
 
-    grid-template-areas: "name       name    name    level   level"
-                         "spacer     spacer  spacer  spacer  spacer"
-                         "main-stats body    luck    luck    spirit"
-                         "main-stats spacer2 spacer2 spacer2 spacer2"
-                         "main-stats b-recov button  button s-recov"
-                         "main-stats spacer3 spacer3 spacer3 spacer3"
-                         "spacer4    spacer3 spacer3 spacer3 spacer3"
-                         "skills     spacer3 spacer3 spacer3 spacer3";
+  grid-template-areas:
+    "name       name    name    level   level"
+    "spacer     spacer  spacer  spacer  spacer"
+    "main-stats body    luck    luck    spirit"
+    "main-stats spacer2 spacer2 spacer2 spacer2"
+    "main-stats b-recov button  button s-recov"
+    "main-stats spacer3 spacer3 spacer3 spacer3"
+    "spacer4    spacer3 spacer3 spacer3 spacer3"
+    "skills     spacer3 spacer3 spacer3 spacer3";
 }
 
 .sheet-container input {
-    text-align: center;
+  text-align: center;
 }
 
 .sheet-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sheet-small-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 0 16px;
-    background: black;
-    color: white;
-    height: 32px;
-    width: 100%;
-    min-width: 100px;
+  padding: 0 16px;
+  background: black;
+  color: white;
+  height: 32px;
+  width: 100%;
+  min-width: 100px;
 
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .sheet-small-label + input {
-    height: 32px;
-    border: 1px solid black;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  height: 32px;
+  border: 1px solid black;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .sheet-large-label {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
-    padding: 0 16px;
-    background: black;
-    color: white;
-    height: 48px;
-    width: 100%;
+  padding: 0 16px;
+  background: black;
+  color: white;
+  height: 48px;
+  width: 100%;
 
-    font-size: 32px;
-    text-transform: uppercase;
+  font-size: 32px;
+  text-transform: uppercase;
 
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .sheet-large-label + input {
-    height: 48px;
-    border: 1px solid black;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  height: 48px;
+  border: 1px solid black;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-
 .sheet-label > input {
-    flex: 1;
+  flex: 1;
 }
 
 .sheet-char-name {
-    grid-area: name;
-    margin-right: 8px;
+  grid-area: name;
+  margin-right: 8px;
 }
 
 .sheet-char-name .sheet-small-label {
-    width: initial;
+  width: initial;
 }
 
 .sheet-char-level {
-    grid-area: level;
-    margin-left: 8px;
+  grid-area: level;
+  margin-left: 8px;
 }
 
 .sheet-main-stats {
-    grid-area: main-stats;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0 8px;
+  grid-area: main-stats;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 8px;
 }
 
 .sheet-stat {
-    width: 100%;
-    margin-bottom: 8px;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .sheet-temp-stat {
-    margin: -4px 8px 8px 0;
+  margin: -4px 8px 8px 0;
 }
 
-.sheet-main-stats > .sheet-stat > input[type=number] {
-    width: 44.5px !important;
-    font-size: 20px;
-    font-weight: bold;
+.sheet-main-stats > .sheet-stat > input[type="number"] {
+  width: 44.5px !important;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .sheet-temp-stat > input {
-    width: 37.5px !important;
+  width: 37.5px !important;
 }
 
 .sheet-body-points {
-    grid-area: body;
-    margin: 0 8px;
-    background: white;
+  grid-area: body;
+  margin: 0 8px;
+  background: white;
 
-    border: 1px solid black;
-    border-radius: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .sheet-luck-points {
-    grid-area: luck;
-    margin: 0 8px;
-    background: white;
+  grid-area: luck;
+  margin: 0 8px;
+  background: white;
 
-    border: 1px solid black;
-    border-radius: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .sheet-spirit-points {
-    grid-area: spirit;
-    margin: 0 8px;
-    background: white;
+  grid-area: spirit;
+  margin: 0 8px;
+  background: white;
 
-    border: 1px solid black;
-    border-radius: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .sheet-small-category {
-    padding: 0 16px;
-    background: black;
-    color: white;
-    height: 32px;
+  padding: 0 16px;
+  background: black;
+  color: white;
+  height: 32px;
 
-    display:flex ;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sheet-max-points {
-    height: 56px;
-    width: 56px;
+  height: 56px;
+  width: 56px;
 
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .sheet-max-points > input {
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    font-weight: bold;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .sheet-points-input {
-    width: 100% !important;
-    height: 93px !important;
-    border: 0;
-    font-size: 64px;
+  width: 100% !important;
+  height: 93px !important;
+  border: 0;
+  font-size: 64px;
 }
 
 .sheet-body-recovery {
-    grid-area: b-recov;
-    margin: 0 8px;
+  grid-area: b-recov;
+  margin: 0 8px;
 }
 
 .sheet-body-recovery .sheet-small-label {
-    width: 100%;
+  width: 100%;
 }
 
 .sheet-spirit-recovery {
-    grid-area: s-recov;
-    margin: 0 8px;
+  grid-area: s-recov;
+  margin: 0 8px;
 }
 
 .sheet-spirit-recovery .sheet-small-label {
-    width: 100%;
+  width: 100%;
 }
 
 .sheet-skills {
-    grid-area: skills;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-    margin: 0 8px;
+  margin: 0 8px;
 }
 
 .sheet-threedice {
-    grid-area: button;
-    width: 50%;
-    align-self: center;
-    justify-self: center;
+  grid-area: button;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
 }
 
 .sheet-rolltemplate-threedice div.sheet-template-container {
-	border: 2px solid black !important;
-	border-radius: 3px 3px 3px 3px;
+  border: 2px solid black !important;
+  border-radius: 3px 3px 3px 3px;
 }
 
 .sheet-rolltemplate-threedice .sheet-template-header {
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 8px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px;
 }
 
 .sheet-rolltemplate-threedice .sheet-template-rolls {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
 }
